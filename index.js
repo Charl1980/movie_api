@@ -4,6 +4,18 @@ const express = require('express'),
 
 const app = express();
 
+let topTenMovies = [
+  {
+    title: 'Equilibrium',
+  },
+  {
+    title: 'Lords of Dogtown',
+  },
+  {
+    title: 'Lost Highway',
+  }
+];
+
 //Middleware functions
 app.use(morgan('common'));
 app.use(express.static('public'));
