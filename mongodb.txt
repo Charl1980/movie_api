@@ -1,0 +1,259 @@
+var movie1 = {
+  Title: "Silence of the Lambs",
+  Description: "A young and inexperienced FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
+  Genre: {
+    Name: "Thriller",
+    Description: "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience."
+  },
+  Director: {
+    Name: "Jonathan Demme",
+    Bio: "Updated description of Robert Jonathan Demme was an American director, producer, and screenwriter.",
+    Birth: "1944",
+    Death: "2017"
+  },
+  ImageURL: "https://www.imdb.com/title/tt0102926/mediaviewer/rm3242988544/",
+  Featured: true
+}
+
+db.movies.insertOne(movie1)
+
+var movie2 = {
+  Title: "Reservoir Dogs",
+  Description: "Updated movie description stating when a simple jewelry heist goes horribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
+  Genre: {
+    Name: "Drama",
+    Description: "Drama is a category of narrative fiction (or semi-fiction) intended to be more serious than humorous in tone."
+  },
+  Director: {
+    Name: "Quentin Tarantino",
+    Bio: "Quentin Jerome Tarantino was born in Knoxville, Tennessee. His father, Tony Tarantino, is an Italian-American actor and musician from New York, and his mother, Connie (McHugh), is a nurse from Tennessee. Quentin moved with his mother to Torrance, California, when he was four years old.",
+    Birth: "1963"
+  },
+  ImageURL: "https://www.imdb.com/title/tt0105236/mediaviewer/rm1533490688/",
+  Featured: false,
+  Actors: "Harvey Keitel"
+}
+
+db.movies.insertOne(movie2)
+
+var movie3 = {
+  Title: "Pulp Fiction",
+  Description: "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+  Genre: {
+    Name: "Drama",
+    Description: "Drama is a category of narrative fiction (or semi-fiction) intended to be more serious than humorous in tone."
+  },
+  Director: {
+    Name: "Quentin Tarantino",
+    Bio: "Quentin Jerome Tarantino was born in Knoxville, Tennessee. His father, Tony Tarantino, is an Italian-American actor and musician from New York, and his mother, Connie (McHugh), is a nurse from Tennessee. Quentin moved with his mother to Torrance, California, when he was four years old.",
+    Birth: "1963"
+  },
+  ImageURL: "https://www.imdb.com/title/tt0110912/mediaviewer/rm1959546112/",
+  Featured: false,
+  Actors: ["Samuel L. Jackson", "Uma Thurman", "John Travolta"]
+}
+
+db.movies.insertOne(movie3)
+
+var movie4 = {
+  Title: "Django Unchained",
+  Description: "With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation-owner in Mississippi.",
+  Genre: {
+    Name: "Drama",
+    Description: "Drama is a category of narrative fiction (or semi-fiction) intended to be more serious than humorous in tone."
+  },
+  Director: {
+    Name: "Quentin Tarantino",
+    Bio: "Quentin Jerome Tarantino was born in Knoxville, Tennessee. His father, Tony Tarantino, is an Italian-American actor and musician from New York, and his mother, Connie (McHugh), is a nurse from Tennessee. Quentin moved with his mother to Torrance, California, when he was four years old.",
+    Birth: "1963"
+  },
+  ImageURL: "https://www.imdb.com/title/tt1853728/mediaviewer/rm958180352/",
+  Featured: false,
+  Actors: ["Samuel L. Jackson", "Jamie Foxx", "Christoph Waltz"]
+}
+
+db.movies.insertOne(movie4)
+
+var movie5 = {
+  Title: "Philadelphia",
+  Description: "When a man with HIV is fired by his law firm because of his condition, he hires a homophobic small time lawyer as the only willing advocate for a wrongful dismissal suit.",
+  Genre: {
+    Name: "Drama",
+    Description: "Drama is a category of narrative fiction (or semi-fiction) intended to be more serious than humorous in tone."
+  },
+  Director: {
+    Name: "Jonathan Demme",
+    Bio: "Robert Jonathan Demme was an American director, producer, and screenwriter.",
+    Birth: "1944",
+    Death: "2017"
+  },
+  ImageURL: "https://www.imdb.com/title/tt0107818/mediaviewer/rm3014133760/",
+  Featured: false,
+  Actors: ["Tom Hanks", "Denzel Washington"]
+}
+
+db.movies.insertOne(movie5)
+
+var movie6 = {
+  Title: "Equilibrium",
+  Description: "In an oppressive future where all forms of feeling are illegal, a man in charge of enforcing the law rises to overthrow the system and state.",
+  Genre: {
+    Name: "Action",
+    Description: "Action film is a film genre in which the protagonist is thrust into a series of events that typically involve violence and physical feats."
+  },
+  Director: {
+    Name: "Kurt Wimmer",
+    Bio: "Kurt Wimmer was born in 1964. He is a writer and producer, known for Equilibrium (2002), Point Break (2015) and Total Recall (2012).",
+    Birth: "1964"
+  },
+  ImageURL: "https://www.imdb.com/title/tt0238380/mediaviewer/rm4126777088/",
+  Featured: false,
+  Actors: ["Christian Bale", "Taye Diggs"]
+}
+
+db.movies.insertOne(movie6)
+
+var movie7 = {
+  Title: "Ultraviolet",
+  Description: "A beautiful hæmophage infected with a virus that gives her superhuman powers has to protect a boy in a futuristic world, who is thought to be carrying antigens that would destroy all hæmophages.",
+  Genre: {
+    Name: "Action",
+    Description: "Action film is a film genre in which the protagonist is thrust into a series of events that typically involve violence and physical feats."
+  },
+  Director: {
+    Name: "Kurt Wimmer",
+    Bio: "Kurt Wimmer was born in 1964. He is a writer and producer, known for Equilibrium (2002), Point Break (2015) and Total Recall (2012).",
+    Birth: "1964"
+  },
+  ImageURL: "https://www.imdb.com/title/tt0370032/mediaviewer/rm1240600064/",
+  Featured: false,
+  Actors: ["Milla Jovovich"]
+}
+
+db.movies.insertOne(movie7)
+
+var movie8 = {
+  Title: "Se7en",
+  Description: "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+  Genre: {
+    Name: "Drama",
+    Description: "Drama is a category of narrative fiction (or semi-fiction) intended to be more serious than humorous in tone."
+  },
+  Director: {
+    Name: "David Fincher",
+    Bio: "David Fincher was born in 1962 in Denver, Colorado, and was raised in Marin County, California.",
+    Birth: "1962"
+  },
+  ImageURL: "https://www.imdb.com/title/tt0114369/mediaviewer/rm3116368640/",
+  Featured: false,
+  Actors: ["Morgan Freeman", "Brad Pitt"]
+}
+
+db.movies.insertOne(movie8)
+
+var movie9 = {
+  Title: "Fight Club",
+  Description: "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+  Genre: {
+    Name: "Drama",
+    Description: "Drama is a category of narrative fiction (or semi-fiction) intended to be more serious than humorous in tone."
+  },
+  Director: {
+    Name: "David Fincher",
+    Bio: "David Fincher was born in 1962 in Denver, Colorado, and was raised in Marin County, California.",
+    Birth: "1962"
+  },
+  ImageURL: "https://www.imdb.com/title/tt0137523/mediaviewer/rm2110056193/",
+  Featured: false,
+  Actors: ["Brad Pitt", "Edward Norton"]
+}
+
+db.movies.insertOne(movie9)
+
+var movie10 = {
+  Title: "Knocked Up",
+  Description: "For fun-loving party animal Ben Stone, the last thing he ever expected was for his one-night stand to show up on his doorstep eight weeks later to tell him she's pregnant with his child.",
+  Genre: {
+    Name: "Comedy",
+    Description: "Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+  },
+  Director: {
+    Name: "Judd Apatow",
+    Bio: "Judd Apatow is an American producer, writer, director, actor and stand-up comedian.",
+    Birth: "1967"
+  },
+  ImageURL: "https://www.imdb.com/title/tt0478311/mediaviewer/rm592592384/",
+  Featured: false,
+  Actors: ["Seth Rogen", "Paul Rudd"]
+}
+
+db.movies.insertOne(movie10)
+
+var movie11 = {
+  Title: "The 40-Year-Old Virgin",
+  Description: "Goaded by his buddies, a nerdy guy who's never 'done the deed' only finds the pressure mounting when he meets a single mother.",
+  Genre: {
+    Name: "Comedy",
+    Description: "Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+  },
+  Director: {
+    Name: "Judd Apatow",
+    Bio: "Judd Apatow is an American producer, writer, director, actor and stand-up comedian.",
+    Birth: "1967"
+  },
+  ImageURL: "https://www.imdb.com/title/tt0405422/mediaviewer/rm1293687553/",
+  Featured: false,
+  Actors: ["Steve Carell", "Paul Rudd"]
+}
+
+db.movies.insertOne(movie11)
+
+var user1 = {
+  Username: "sue83",
+  Password: "pw8383",
+  Email: "sue83@email.com",
+  Bithday: new Date("1999-01-02"),
+  FavoriteMovies: [ ObjectId("627d7a88d8f77f244be23656"), ObjectId("627e2899d8f77f244be2365d") ]
+}
+
+db.users.insertOne(user1)
+
+var user2 = {
+  Username: "bob99",
+  Password: "12p34w",
+  Email: "bob99@email.com",
+  Bithday: new Date("1983-02-03"),
+  FavoriteMovies: [ ObjectId("627e2979d8f77f244be2365e"), ObjectId("627e25e8d8f77f244be2365b") ]
+}
+
+db.users.insertOne(user2)
+
+var user3 = {
+  Username: "fritz11",
+  Password: "buzz123",
+  Email: "thefritz@newemail.com",
+  Bithday: new Date("2001-03-04"),
+  FavoriteMovies: [ ObjectId("627e2899d8f77f244be2365d"), ObjectId("627e2899d8f77f244be2365d") ]
+}
+
+db.users.insertOne(user3)
+
+var user4 = {
+  Username: "jean023",
+  Password: "j0e2a3n",
+  Email: "jean@email.com",
+  Bithday: new Date("2005-04-05"),
+  FavoriteMovies: [ ObjectId("627e2a9ad8f77f244be2365f"), ObjectId("627e203ad8f77f244be23658") ]
+}
+
+db.users.insertOne(user4)
+
+var user5 = {
+  Username: "nolly09",
+  Password: "nolster123",
+  Email: "nolly@email.com",
+  Bithday: new Date("1995-05-06"),
+  FavoriteMovies: [ ObjectId("627e1d55d8f77f244be23657"), ObjectId("627e2281d8f77f244be2365a") ]
+}
+
+db.users.insertOne(user5)

@@ -57,12 +57,13 @@
                   },
                   Director: {
                     Name: string,
-                    Birth: string,
-                    Death: string,
                     Bio: string,
+                    Birth: string,
+                    Death: string
                   },
-                    Actors: string,
-                    imgURL: string,
+                  imgURL: string,
+                  featured: boolean,
+                  Actors: string
                   }
               </code>
             </pre>
@@ -96,9 +97,9 @@
               <code>
                 {
                   Name: string,
-                  Birth: string,
-                  Death: string,
                   Bio: string,
+                  Birth: string,
+                  Death: string
                 }
               </code>
             </pre>
@@ -115,7 +116,10 @@
               <code>
                 {
                   "id": "",
-                  "name": "",
+                  "username": "",
+                  "password": "",
+                  "email": "",
+                  "birthday": "",
                   "favoriteMovies": []
                 }
               </code>
@@ -131,7 +135,7 @@
             <pre>
               <code>
                 {
-                  "name": "siya",
+                  "username": "siya",
                   "favoriteMovies": "Dogma"
                 }
               </code>
@@ -142,7 +146,7 @@
               <code>
                 {
                   "id": "7"
-                  "name": "siya",
+                  "username": "siya",
                   "favoriteMovies": "Dogma"
                 }
               </code>
@@ -151,17 +155,17 @@
         </tr>
         <tr>
           <td>Allow users to add a movie to their list of favorites</td>
-          <td>/users/[id]/[movieTitle]</td>
+          <td>/users/[id]/[favoriteMovies]</td>
           <td>PUT</td>
-          <td>:id/:movieTitle</td>
+          <td>:id/:favoriteMovies</td>
           <td>None</td>
           <td>A text that a movie has been added</td>
         </tr>
         <tr>
           <td>Allow users to remove a movie from their list of favorites</td>
-          <td>/users/[id]/[movieTitle]</td>
+          <td>/users/[id]/[favoriteMovies]</td>
           <td>DELETE</td>
-          <td>:id/:movieTitle</td>
+          <td>:id/:favoriteMovies</td>
           <td>None</td>
           <td>A text that a movie has been removed</td>
         </tr>
