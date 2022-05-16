@@ -79,7 +79,6 @@
             <pre>
               <code>
                 {
-                  Name: 'Thriller',
                   Description: '',
                 }
               </code>
@@ -110,8 +109,19 @@
           <td>/users</td>
           <td>POST</td>
           <td>None</td>
-          <td>None</td>
-          <td>A JSON object holding data about a new user to add. Example:
+          <td>A JSON object holding a requst for new data. Example:
+            <pre>
+              <code>
+                {
+                  "username": "",
+                  "password": "",
+                  "email": "",
+                  "birthday": ""
+                }
+              </code>
+            </pre>
+          </td>
+          <td>A JSON object holding data about a new user with ID. Example:
             <pre>
               <code>
                 {
@@ -128,15 +138,19 @@
         </tr>
         <tr>
           <td>Allow users to update their user info</td>
-          <td>/users/[id]</td>
+          <td>/users/[Username]</td>
           <td>PUT</td>
-          <td>:id</td>
-          <td>A JSON object holding data about the new passward. Example:
+          <td>:Username</td>
+          <td>A JSON object holding new data. Example:
             <pre>
               <code>
                 {
-                  "username": "siya",
-                  "favoriteMovies": "Dogma"
+                  "id": "",
+                  "username": "",
+                  "password": "",
+                  "email": "",
+                  "birthday": "",
+                  "favoriteMovies": []
                 }
               </code>
             </pre>
@@ -145,9 +159,12 @@
             <pre>
               <code>
                 {
-                  "id": "7"
-                  "username": "siya",
-                  "favoriteMovies": "Dogma"
+                  "id": "",
+                  "username": "",
+                  "password": "",
+                  "email": "",
+                  "birthday": "",
+                  "favoriteMovies": []
                 }
               </code>
             </pre>
@@ -155,25 +172,77 @@
         </tr>
         <tr>
           <td>Allow users to add a movie to their list of favorites</td>
-          <td>/users/[id]/[favoriteMovies]</td>
-          <td>PUT</td>
-          <td>:id/:favoriteMovies</td>
-          <td>None</td>
-          <td>A text that a movie has been added</td>
+          <td>/users/[Username]/movies/[MovieID]</td>
+          <td>POST</td>
+          <td>:Username/movies/:MovieID</td>
+          <td>A JSON object showing data to be added. Example:
+            <pre>
+              <code>
+                {
+                  "id": "",
+                  "username": "",
+                  "password": "",
+                  "email": "",
+                  "birthday": "",
+                  "favoriteMovies": []
+                }
+              </code>
+            </pre>
+          </td>
+          <td>A JSON object showing data added. Example:
+            <pre>
+              <code>
+                {
+                  "id": "",
+                  "username": "",
+                  "password": "",
+                  "email": "",
+                  "birthday": "",
+                  "favoriteMovies": [MovieID]
+                }
+              </code>
+            </pre>
+          </td>
         </tr>
         <tr>
           <td>Allow users to remove a movie from their list of favorites</td>
-          <td>/users/[id]/[favoriteMovies]</td>
+          <td>/users/[Username]/movies/[MovieID]</td>
           <td>DELETE</td>
-          <td>:id/:favoriteMovies</td>
-          <td>None</td>
-          <td>A text that a movie has been removed</td>
+          <td>:Username/movies/:MovieID</td>
+          <td>A JSON object showing data to be removed. Example:
+            <pre>
+              <code>
+                {
+                  "id": "",
+                  "username": "",
+                  "password": "",
+                  "email": "",
+                  "birthday": "",
+                  "favoriteMovies": [MovieID]
+                }
+              </code>
+            </pre>
+          </td>
+          <td>A JSON object showing data removed. Example:
+            <pre>
+              <code>
+                {
+                  "id": "",
+                  "username": "",
+                  "password": "",
+                  "email": "",
+                  "birthday": "",
+                  "favoriteMovies": []
+                }
+              </code>
+            </pre>
+          </td>
         </tr>
         <tr>
           <td>Allow existing users to deregister</td>
-          <td>/users/[id]</td>
+          <td>/users/[Username]</td>
           <td>DELETE</td>
-          <td>:id</td>
+          <td>:Username</td>
           <td>None</td>
           <td>A text that the user has been removed</td>
         </tr>
