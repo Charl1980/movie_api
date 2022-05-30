@@ -131,6 +131,11 @@ app.get('/movies', passport.authenticate('jwt', {
     });
 });
 
+//GET request
+app.get('/', (req, res) => {
+  res.send('Welcome to my myFlix app!');
+});
+
 //GET a movie by title
 app.get('/movies/:Title', passport.authenticate('jwt', {
   session: false
