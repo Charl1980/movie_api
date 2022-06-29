@@ -117,8 +117,8 @@ app.post('/users/:Username/movies/:MovieID', passport.authenticate('jwt', {
 });
 
 //READ Endpoints
-//GET all movies. Replace later: passport.authenticate('jwt', {session: false}), 
-app.get('/movies', (req, res) => {
+//GET all movies.  
+app.get('/movies', passport.authenticate('jwt', { session: false }), (req, res) => {
   Movies.find()
     .then((movies) => {
       res.status(201).json(movies);
