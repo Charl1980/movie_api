@@ -30,7 +30,9 @@ mongoose.connect(process.env.CONNECTION_URI, {
 
 //CORS implementation
 const cors = require('cors');
-app.use(cors());
+app.use(cors({
+  origin: '*'
+}));
 
 //Middleware functions
 app.use(morgan('common'));
@@ -117,7 +119,7 @@ app.post('/users/:Username/movies/:MovieID', passport.authenticate('jwt', {
 });
 
 //READ Endpoints
-//GET all movies.  
+//GET all movies.
 app.get('/movies', passport.authenticate('jwt', { session: false }), (req, res) => {
   Movies.find()
     .then((movies) => {
