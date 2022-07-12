@@ -34,8 +34,10 @@ let allowedOrigins = [
   'http://localhost:8080',
   'http://localhost:1234',
   'https://myflix-movies1980.herokuapp.com/',
-  'https://www.themoviedb.org/'
+  'https://www.themoviedb.org/',
+  'Access-Control-Allow-Origin'
 ];
+
 app.use(cors({
   origin: (origin, callback) => {
     if (!origin) return callback(null, true);
